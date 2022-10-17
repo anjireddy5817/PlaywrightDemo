@@ -1,0 +1,776 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/POM/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "chromium",
+        "testDir": "D:/POM/Pomtest",
+        "testIgnore": [],
+        "testMatch": [
+          "Pomtest/addToCart.test.ts"
+        ],
+        "timeout": 3600000
+      },
+      {
+        "outputDir": "D:/POM/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "firefox",
+        "testDir": "D:/POM/Pomtest",
+        "testIgnore": [],
+        "testMatch": [
+          "Pomtest/addToCart.test.ts"
+        ],
+        "timeout": 3600000
+      },
+      {
+        "outputDir": "D:/POM/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "webkit",
+        "testDir": "D:/POM/Pomtest",
+        "testIgnore": [],
+        "testMatch": [
+          "Pomtest/addToCart.test.ts"
+        ],
+        "timeout": 3600000
+      }
+    ],
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "D:\\POM\\node_modules\\experimental-allure-playwright\\dist\\index.js",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "D:\\POM\\Base\\custom-reporter.ts",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "rootDir": "D:/POM/Pomtest",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.26.1",
+    "workers": 2,
+    "webServer": null,
+    "_watchMode": false,
+    "_webServers": [],
+    "_globalOutputDir": "D:\\POM",
+    "_configDir": "D:\\POM",
+    "_testGroupsCount": 3,
+    "_ignoreSnapshots": false,
+    "_workerIsolation": "isolate-pools"
+  },
+  "suites": [
+    {
+      "title": "addToCart.test.ts",
+      "file": "addToCart.test.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "page object model test demo",
+          "file": "addToCart.test.ts",
+          "line": 16,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Registe test_01",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 12381,
+                      "stdout": [
+                        {
+                          "text": ": Entering the firstname: fscblkxyxw\n"
+                        },
+                        {
+                          "text": ": Entering the lastname: reeopyxeee\n"
+                        },
+                        {
+                          "text": ": Entering the email:asdmnb1665992611064@mailinator.com\n"
+                        },
+                        {
+                          "text": ": Entering the telephone:3063778765\n"
+                        },
+                        {
+                          "text": ": Entering the password:Test@12345\n"
+                        },
+                        {
+                          "text": ": Entering the confirm password:Test@12345\n"
+                        },
+                        {
+                          "text": ": Verifying the subscribe radio button\n"
+                        },
+                        {
+                          "text": ": Clicking on the agree privacy policy checkbox\n"
+                        },
+                        {
+                          "text": ": Clicking on the continue button\n"
+                        },
+                        {
+                          "text": ": Verifying the account creation success message\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-17T07:43:31.086Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\POM\\test-results\\addToCart-page-object-model-test-demo-Registe-test-01-chromium\\video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\POM\\test-results\\addToCart-page-object-model-test-demo-Registe-test-01-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7fd058b15c0ca70151c1-863239d5f56fab73091a",
+              "file": "addToCart.test.ts",
+              "line": 17,
+              "column": 5
+            },
+            {
+              "title": "Login test-02",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 17263,
+                      "error": {
+                        "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Shop by Catego\"\u001b[39m\nReceived string: \u001b[31m\"\u001b[7m  \u001b[27mShop by Catego\u001b[7mry\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \"//a[contains(.,'Shop by Category')]\"\u001b[22m\n\u001b[2m  -   selector resolved to <a role=\"button\" target=\"_self\" aria-expanded=\"fals…>…</a>\u001b[22m\n\u001b[2m  -   unexpected value \"  Shop by Category\"\u001b[22m\n\u001b[2m  -   selector resolved to <a role=\"button\" target=\"_self\" aria-expanded=\"fals…>…</a>\u001b[22m\n\u001b[2m  -   unexpected value \"  Shop by Category\"\u001b[22m\n\u001b[2m  -   selector resolved to <a role=\"button\" target=\"_self\" aria-expanded=\"fals…>…</a>\u001b[22m\n\u001b[2m  -   unexpected value \"  Shop by Category\"\u001b[22m\n\u001b[2m  -   selector resolved to <a role=\"button\" target=\"_self\" aria-expanded=\"fals…>…</a>\u001b[22m\n\u001b[2m  -   unexpected value \"  Shop by Category\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Shop by Catego\"\u001b[39m\nReceived string: \u001b[31m\"\u001b[7m  \u001b[27mShop by Catego\u001b[7mry\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \"//a[contains(.,'Shop by Category')]\"\u001b[22m\n\u001b[2m  -   selector resolved to <a role=\"button\" target=\"_self\" aria-expanded=\"fals…>…</a>\u001b[22m\n\u001b[2m  -   unexpected value \"  Shop by Category\"\u001b[22m\n\u001b[2m  -   selector resolved to <a role=\"button\" target=\"_self\" aria-expanded=\"fals…>…</a>\u001b[22m\n\u001b[2m  -   unexpected value \"  Shop by Category\"\u001b[22m\n\u001b[2m  -   selector resolved to <a role=\"button\" target=\"_self\" aria-expanded=\"fals…>…</a>\u001b[22m\n\u001b[2m  -   unexpected value \"  Shop by Category\"\u001b[22m\n\u001b[2m  -   selector resolved to <a role=\"button\" target=\"_self\" aria-expanded=\"fals…>…</a>\u001b[22m\n\u001b[2m  -   unexpected value \"  Shop by Category\"\u001b[22m\n\n    at LoginPage.verifyShopbyCategoryLabel (D:\\POM\\Pages\\loginpage.ts:34:34)\n    at D:\\POM\\Pomtest\\addToCart.test.ts:36:25"
+                      },
+                      "stdout": [
+                        {
+                          "text": ": Entering the email address:asdmnb1665992611064@mailinator.com\n"
+                        },
+                        {
+                          "text": ": Entering the password:Test@12345\n"
+                        },
+                        {
+                          "text": ": Clicking on the login button\n"
+                        },
+                        {
+                          "text": ": Verifying the page title\n"
+                        },
+                        {
+                          "text": ": Verifying the shop by category label\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-17T07:43:44.475Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\POM\\test-results\\addToCart-page-object-model-test-demo-Login-test-02-chromium\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\POM\\test-results\\addToCart-page-object-model-test-demo-Login-test-02-chromium\\trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\POM\\test-results\\addToCart-page-object-model-test-demo-Login-test-02-chromium\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\POM\\Pages\\loginpage.ts",
+                        "column": 34,
+                        "line": 34
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7fd058b15c0ca70151c1-238a93b2767922472a90",
+              "file": "addToCart.test.ts",
+              "line": 30,
+              "column": 5
+            },
+            {
+              "title": "Add to cart test-03",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "skipped",
+                      "duration": 0,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-17T07:44:04.174Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7fd058b15c0ca70151c1-94fa861fe252198e95ed",
+              "file": "addToCart.test.ts",
+              "line": 38,
+              "column": 10
+            },
+            {
+              "title": "Login test-04",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "failed",
+                      "duration": 18793,
+                      "error": {
+                        "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"\u001b[7mMy \u001b[27mAccount\"\u001b[39m\nReceived string: \u001b[31m\"Account\u001b[7m Login\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"\u001b[7mMy \u001b[27mAccount\"\u001b[39m\nReceived string: \u001b[31m\"Account\u001b[7m Login\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\n    at LoginPage.verifyPageTitle (D:\\POM\\Pages\\loginpage.ts:29:33)\n    at D:\\POM\\Pomtest\\addToCart.test.ts:59:25"
+                      },
+                      "stdout": [
+                        {
+                          "text": ": Entering the email address:asdmnb1665992644159@mailinator.com\n"
+                        },
+                        {
+                          "text": ": Entering the password:Test@12345\n"
+                        },
+                        {
+                          "text": ": Clicking on the login button\n"
+                        },
+                        {
+                          "text": ": Verifying the page title\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-17T07:44:04.175Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\POM\\test-results\\addToCart-page-object-model-test-demo-Login-test-04-chromium\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\POM\\test-results\\addToCart-page-object-model-test-demo-Login-test-04-chromium\\trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\POM\\test-results\\addToCart-page-object-model-test-demo-Login-test-04-chromium\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\POM\\Pages\\loginpage.ts",
+                        "column": 33,
+                        "line": 29
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7fd058b15c0ca70151c1-167640344e26a80264ae",
+              "file": "addToCart.test.ts",
+              "line": 54,
+              "column": 5
+            }
+          ]
+        },
+        {
+          "title": "page object model test demo",
+          "file": "addToCart.test.ts",
+          "line": 16,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Registe test_01",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "failed",
+                      "duration": 15763,
+                      "error": {
+                        "message": "browserContext.newPage: Page closed",
+                        "stack": "browserContext.newPage: Page closed\n"
+                      },
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-17T07:43:31.579Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\POM\\test-results\\addToCart-page-object-model-test-demo-Registe-test-01-firefox\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7fd058b15c0ca70151c1-a6518f9f4ce33bf30920",
+              "file": "addToCart.test.ts",
+              "line": 17,
+              "column": 5
+            },
+            {
+              "title": "Login test-02",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "failed",
+                      "duration": 21985,
+                      "error": {
+                        "message": "browserContext.newPage: Page closed",
+                        "stack": "browserContext.newPage: Page closed\n"
+                      },
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-17T07:43:56.548Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\POM\\test-results\\addToCart-page-object-model-test-demo-Login-test-02-firefox\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7fd058b15c0ca70151c1-ec8749ce038d4ccddf58",
+              "file": "addToCart.test.ts",
+              "line": 30,
+              "column": 5
+            },
+            {
+              "title": "Add to cart test-03",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "status": "skipped",
+                      "duration": 0,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-17T07:44:25.405Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7fd058b15c0ca70151c1-6ceeabcaa74b2fe7435e",
+              "file": "addToCart.test.ts",
+              "line": 38,
+              "column": 10
+            },
+            {
+              "title": "Login test-04",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "status": "failed",
+                      "duration": 6313,
+                      "error": {
+                        "message": "browserContext.newPage: Page closed",
+                        "stack": "browserContext.newPage: Page closed\n"
+                      },
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-17T07:44:25.407Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\POM\\test-results\\addToCart-page-object-model-test-demo-Login-test-04-firefox\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7fd058b15c0ca70151c1-fb55f992f903e464070f",
+              "file": "addToCart.test.ts",
+              "line": 54,
+              "column": 5
+            }
+          ]
+        },
+        {
+          "title": "page object model test demo",
+          "file": "addToCart.test.ts",
+          "line": 16,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Registe test_01",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "status": "passed",
+                      "duration": 18280,
+                      "stdout": [
+                        {
+                          "text": ": Entering the firstname: kojdndughf\n"
+                        },
+                        {
+                          "text": ": Entering the lastname: gberoizpsx\n"
+                        },
+                        {
+                          "text": ": Entering the email:asdmnb1665992672284@mailinator.com\n"
+                        },
+                        {
+                          "text": ": Entering the telephone:5951425295\n"
+                        },
+                        {
+                          "text": ": Entering the password:Test@12345\n"
+                        },
+                        {
+                          "text": ": Entering the confirm password:Test@12345\n"
+                        },
+                        {
+                          "text": ": Verifying the subscribe radio button\n"
+                        },
+                        {
+                          "text": ": Clicking on the agree privacy policy checkbox\n"
+                        },
+                        {
+                          "text": ": Clicking on the continue button\n"
+                        },
+                        {
+                          "text": ": Verifying the account creation success message\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-17T07:44:32.315Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\POM\\test-results\\addToCart-page-object-model-test-demo-Registe-test-01-webkit\\video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\POM\\test-results\\addToCart-page-object-model-test-demo-Registe-test-01-webkit\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7fd058b15c0ca70151c1-fff783b8295092c89349",
+              "file": "addToCart.test.ts",
+              "line": 17,
+              "column": 5
+            },
+            {
+              "title": "Login test-02",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "status": "failed",
+                      "duration": 20743,
+                      "error": {
+                        "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Shop by Catego\"\u001b[39m\nReceived string: \u001b[31m\"\u001b[7m  \u001b[27mShop by Catego\u001b[7mry\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \"//a[contains(.,'Shop by Category')]\"\u001b[22m\n\u001b[2m  -   selector resolved to <a role=\"button\" target=\"_self\" aria-expanded=\"fals…>…</a>\u001b[22m\n\u001b[2m  -   unexpected value \"  Shop by Category\"\u001b[22m\n\u001b[2m  -   selector resolved to <a role=\"button\" target=\"_self\" aria-expanded=\"fals…>…</a>\u001b[22m\n\u001b[2m  -   unexpected value \"  Shop by Category\"\u001b[22m\n\u001b[2m  -   selector resolved to <a role=\"button\" target=\"_self\" aria-expanded=\"fals…>…</a>\u001b[22m\n\u001b[2m  -   unexpected value \"  Shop by Category\"\u001b[22m\n\u001b[2m  -   selector resolved to <a role=\"button\" target=\"_self\" aria-expanded=\"fals…>…</a>\u001b[22m\n\u001b[2m  -   unexpected value \"  Shop by Category\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Shop by Catego\"\u001b[39m\nReceived string: \u001b[31m\"\u001b[7m  \u001b[27mShop by Catego\u001b[7mry\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \"//a[contains(.,'Shop by Category')]\"\u001b[22m\n\u001b[2m  -   selector resolved to <a role=\"button\" target=\"_self\" aria-expanded=\"fals…>…</a>\u001b[22m\n\u001b[2m  -   unexpected value \"  Shop by Category\"\u001b[22m\n\u001b[2m  -   selector resolved to <a role=\"button\" target=\"_self\" aria-expanded=\"fals…>…</a>\u001b[22m\n\u001b[2m  -   unexpected value \"  Shop by Category\"\u001b[22m\n\u001b[2m  -   selector resolved to <a role=\"button\" target=\"_self\" aria-expanded=\"fals…>…</a>\u001b[22m\n\u001b[2m  -   unexpected value \"  Shop by Category\"\u001b[22m\n\u001b[2m  -   selector resolved to <a role=\"button\" target=\"_self\" aria-expanded=\"fals…>…</a>\u001b[22m\n\u001b[2m  -   unexpected value \"  Shop by Category\"\u001b[22m\n\n    at LoginPage.verifyShopbyCategoryLabel (D:\\POM\\Pages\\loginpage.ts:34:34)\n    at D:\\POM\\Pomtest\\addToCart.test.ts:36:25"
+                      },
+                      "stdout": [
+                        {
+                          "text": ": Entering the email address:asdmnb1665992672284@mailinator.com\n"
+                        },
+                        {
+                          "text": ": Entering the password:Test@12345\n"
+                        },
+                        {
+                          "text": ": Clicking on the login button\n"
+                        },
+                        {
+                          "text": ": Verifying the page title\n"
+                        },
+                        {
+                          "text": ": Verifying the shop by category label\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-17T07:44:55.630Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\POM\\test-results\\addToCart-page-object-model-test-demo-Login-test-02-webkit\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\POM\\test-results\\addToCart-page-object-model-test-demo-Login-test-02-webkit\\trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\POM\\test-results\\addToCart-page-object-model-test-demo-Login-test-02-webkit\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\POM\\Pages\\loginpage.ts",
+                        "column": 34,
+                        "line": 34
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7fd058b15c0ca70151c1-fffad72540af0e92561d",
+              "file": "addToCart.test.ts",
+              "line": 30,
+              "column": 5
+            },
+            {
+              "title": "Add to cart test-03",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "status": "skipped",
+                      "duration": 0,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-17T07:45:19.006Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7fd058b15c0ca70151c1-3e6128fb6d02f9d3107d",
+              "file": "addToCart.test.ts",
+              "line": 38,
+              "column": 10
+            },
+            {
+              "title": "Login test-04",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 3600000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "status": "failed",
+                      "duration": 19915,
+                      "error": {
+                        "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"\u001b[7mMy \u001b[27mAccount\"\u001b[39m\nReceived string: \u001b[31m\"Account\u001b[7m Login\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"\u001b[7mMy \u001b[27mAccount\"\u001b[39m\nReceived string: \u001b[31m\"Account\u001b[7m Login\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for selector \":root\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\u001b[2m  -   selector resolved to <html dir=\"ltr\" lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Account Login\"\u001b[22m\n\n    at LoginPage.verifyPageTitle (D:\\POM\\Pages\\loginpage.ts:29:33)\n    at D:\\POM\\Pomtest\\addToCart.test.ts:59:25"
+                      },
+                      "stdout": [
+                        {
+                          "text": ": Entering the email address:asdmnb1665992718984@mailinator.com\n"
+                        },
+                        {
+                          "text": ": Entering the password:Test@12345\n"
+                        },
+                        {
+                          "text": ": Clicking on the login button\n"
+                        },
+                        {
+                          "text": ": Verifying the page title\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-17T07:45:19.008Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\POM\\test-results\\addToCart-page-object-model-test-demo-Login-test-04-webkit\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\POM\\test-results\\addToCart-page-object-model-test-demo-Login-test-04-webkit\\trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\POM\\test-results\\addToCart-page-object-model-test-demo-Login-test-04-webkit\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\POM\\Pages\\loginpage.ts",
+                        "column": 33,
+                        "line": 29
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7fd058b15c0ca70151c1-71c412dd860536f2c85a",
+              "file": "addToCart.test.ts",
+              "line": 54,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
