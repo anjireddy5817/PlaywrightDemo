@@ -1,0 +1,1 @@
+: Verifying view cart toast is avialable
