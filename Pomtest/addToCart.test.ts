@@ -35,7 +35,7 @@ test.describe('page object model test demo', async ()=>{
         await loginPage.verifyPageTitle("My Account");
         await loginPage.verifyShopbyCategoryLabel("Shop by Catego");
     })
-    test.skip('Add to cart test-03', async({page, loginPage, homePage, specialHotPage})=>{
+    test('Add to cart test-03', async({page, loginPage, homePage, specialHotPage})=>{
         await page.goto(`${Env.testURL}route=account/login`);
 
 //        loginPage.login(emailAddress,data.password);
@@ -51,7 +51,7 @@ test.describe('page object model test demo', async ()=>{
         const iscartVisible = await specialHotPage.isToastVisible(); 
         await expect(iscartVisible).toBeVisible();
     })
-    test('Login test-04', async({page, loginPage})=>{
+    test.skip('Login test-04', async({page, loginPage})=>{
         await page.goto(`${Env.testURL}route=account/login`);
         await loginPage.enterEmailAddress(emailAddress);
         await loginPage.enterPassword(data.password);
